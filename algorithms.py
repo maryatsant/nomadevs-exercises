@@ -95,4 +95,16 @@ def rotate(A, count):
 print(rotate(A, count))
 
 
+def is_symmetrical(A):
+    if len(A) == 0:       
+        return None
+    for i in range(len(A) / 2):
+        if A[i] != A[len(A) -1 -i]:
+            return False
+        return True
+
+A = [10, 20, 20, 10]
+isA = is_symmetrical(A)
+
+print(is(A))
 
